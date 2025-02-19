@@ -29,7 +29,7 @@ set(CMAKE_INTERPROCEDURAL_OPTIMIZATION OFF)
 # which is recommended *not* to do, but leads to errors otherwise.
 set(CMAKE_CXX_VISIBILITY_PRESET "default")
 
-find_package(Boost 1.83 REQUIRED) #+
+find_package(Boost 1.81 REQUIRED) #+
 
 # Set configurations
 set(STORM_VERSION ${storm_VERSION})
