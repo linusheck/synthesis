@@ -81,6 +81,11 @@ class Property:
         else:
             se.minmax_solver_environment.method = stormpy.MinMaxMethod.optimistic_value_iteration
 
+        import os
+        if os.getenv("POLICY_ITERATION", "0") == "1":
+            se.minmax_solver_environment.method = stormpy.MinMaxMethod.policy_iteration
+            logger.info("(!PATCH) Using policy iteration for model checking")
+
     @classmethod
     def model_check(cls, model, formula):
         return stormpy.model_checking(model, formula, extract_scheduler=True, environment=cls.environment)
