@@ -327,10 +327,10 @@ def get_atomic_predicate_evals(dt_colored_mdp_factory):
 
     constant_comparison_operators = {
         '==': operator.eq,
-        # '!=': operator.ne,
-        # '<': operator.lt,
-        '<=': operator.le,
-        # '>': operator.gt,
+        '!=': operator.ne,
+        '<': operator.lt,
+        # '<=': operator.le,
+        '>': operator.gt,
         '>=': operator.ge
     }
 
@@ -347,10 +347,10 @@ def get_atomic_predicate_evals(dt_colored_mdp_factory):
 
     comparison_opertators = {
         '==': operator.eq,
-        # '!=': operator.ne,
-        # '<': operator.lt,
+        '!=': operator.ne,
+        '<': operator.lt,
         '<=': operator.le,
-        # '>': operator.gt,
+        '>': operator.gt,
         '>=': operator.ge
     }
 
